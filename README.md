@@ -18,13 +18,19 @@ Análise de Requisitos. As informações que se deseja estocar são:
 
 ### 3- A Notown Records decidiu armazenar informações sobre músicos que tocam emseus álbuns (assimcomo outros dados da empresa) em um banco de dados. A empresa escolheu sabiamente contratar você como projetista de banco de dados.
 a) Cada músico que grava na Notown tem um CPF, um nome, um endereço, e umnúmerodetelefone. Músicos (que não ganham muito normalmente) compartilhamo mesmoendereço, enenhum endereço tem mais do que um telefone. 
+
 b) Cada instrumento utilizado nas músicas gravadas na Notown tem umnome (por exemplo,guitarra, sintetizador, flauta) e um tom musical (por exemplo C, B#, E#). 
+
 c) Cada álbum gravado com o selo Notown tem um título, uma data de direitos autorais, umformato(por exemplo, CD ou MC) e um identificador de álbum. 
+
 d) Cada música gravada na Notown tem um título e um autor. 
+
 e) Cada músico toca diversos instrumentos e um determinado instrumento pode ser tocadoporvários músicos.
 
 f) Cada música é interpretada por um ou mais músicos, e um músico pode interpretar maisdeumamúsica. 
+
 g) Cada álbum tem exatamente um músico que trabalha como seu produtor. Naturalmente, ummúsico pode produzir diversos álbuns. 
+
 Projete um esquema conceitual para a Notown e desenhe um diagrama ER para seu esquema. As informações precedentes descrevem a situação que o banco de dados da Notown devemodelar.Certifique-se de indicar todas as restrições de chave e de participação e quaisquer suposiçõesquevocêtiver de assumir por falta de informações fornecidas pelo cliente. Identifique eventualmente restriçõesquevocê não está apto a capturar no diagrama ER e explique sucintamente por que vocênãopoderiaexpressá-las no diagrama com os recursos vistos em aula.
 
 <h4 align="center" color="red"> Solução </h4>
@@ -33,32 +39,43 @@ Projete um esquema conceitual para a Notown e desenhe um diagrama ER para seu es
 ### 4- A cadeia de farmácias Prescrições-RX ofereceu a você um suprimento gratuito vitalício de medicamentos se você projetar seu banco de dados. Dados os custos crescentes relacionados aos cuidados com a saúde, você concordou. Eis as informações que você reuniu após a entrevista comseu cliente:
 a) Os pacientes são identificados pelo CPF, e seus nomes, endereços e idades devem ser
 registrados. 
+
 b) Os médicos são identificados pelo CPF. Para cada médico, o nome, especialidade e anos de
 experiência devem ser registrados. 
+
 c) Cada empresa farmacêutica é identificada pelo nome e tem um número de telefone. 
+
 d) Para cada remédio, o nome e a fórmula devem ser registrados. Cada medicamento é vendido
 por determinada empresa farmacêutica, e o seu nome o identifica univocamente entre os
 produtos dessa empresa. Se uma empresa farmacêutica é excluída, você não precisa mais
 manter o controle de seus produtos. 
+
 e) Cada farmácia tem um nome, endereço e um número de telefone.
+
 f) Todo paciente tem um médico principal. Todo médico tem no mínimo um paciente. 
+
 g) Cada farmácia da rede vende diversos medicamentos e tem um preço para cada um. Um
 medicamento poderia ser vendido em diversas farmácias e o preço pode variar de uma farmácia
 para outra. 
+
 h) Os médicos prescrevem medicamentos para os pacientes. Um médico pode prescrever um ou
 mais medicamentos a diversos pacientes e um paciente pode obter prescrições de diversos
 médicos. Cada prescrição tem uma data e uma quantidade associada a ela. Você pode assumir
 que, se um médico prescreve o mesmo medicamento para o mesmo paciente mais do que uma
 vez, apenas a última prescrição precisa ser armazenada.
+
 i) As empresas farmacêuticas têm contratos de longo prazo com as farmácias. Uma empresa
 farmacêutica pode ter contratos com diversas farmácias, e uma farmácia pode ter contrato com
 diversas empresas farmacêuticas. Para cada contrato, você deve armazenar uma data inicial, uma data final e o texto do contrato.
+
 j) As farmácias indicam um supervisor para cada contrato. Sempre deve haver um supervisor para cada contrato. Pede-se o seguinte:
 
 a. Desenhe um diagrama ER que captura as informações precedentes. Identifique quaisquer
 restrições não capturadas pelo diagrama ER. 
+
 b. Como seu projeto seria alterado se cada medicamento tivesse que ser vendido a um preço fixo
 por todas as farmácias?
+
 c. Como seu projeto seria alterado se os requisitos de projeto se alterassem como segue: se um
 médico prescreve o mesmo medicamento para o mesmo paciente mais do que uma vez, todas essas prescrições devem ser registradas.
 
@@ -78,11 +95,14 @@ c) Se todos os registros de prescrições precisassem ser armazenados, seria nec
 ### 5- Projetar um BD para uma instituição financeira (I) cujas características são:
 a) I é organizada em agências. Cada agência está localizada numa cidade e tem um nome. Seus
 ativos são monitorados por I. 
+
 b) Clientes são identificados por um número. I armazena para cada cliente: nome, rua, cidade. Clientes podem ter contas e fazer empréstimos. Um cliente pode ter um gerente pessoal. 
+
 c) Para cada funcionário de I são armazenados: número, nome, telefone, dependentes, número de
 seu gerente, data de admissão. 
 d) Cada cliente de I pode possuir mais de uma conta, e cada conta pode possuir mais de um cliente. Cada conta recebe um número. I mantém controle sobre o saldo de cada conta e sobre a data
 de seu último acesso.
+
 e) Cada empréstimo tem um número e se origina numa agência, podendo ser mantido por mais de
 um cliente. I controla os pagamentos efetuados para cada empréstimo. 6- Elaborar o esquema conceitual para o BD de uma companhia. A companhia é organizada em departamentos. Cada departamento tem um nome.
 
