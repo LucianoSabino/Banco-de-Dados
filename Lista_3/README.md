@@ -10,4 +10,4 @@ Análise de Requisitos. As informações que se deseja estocar são:
 ∙ informações sobre que peças são utilizadas em que aviões e em que quantidade. ∙ informações sobre técnicos da companhia aérea e que aviões estão habilitados a manipular. 
 
 <h4 align="center" color="red"> Solução </h4>
-![Imagem do diagrama](https://github.com/LucianoSabino/Banco-de-Dados/blob/main/Lista_3/Fotos/Q1.drawio.png?raw=true)
+<img src="https://github.com/LucianoSabino/Banco-de-Dados/blob/main/Lista_3/Fotos/Q1.drawio.png?raw=true">
