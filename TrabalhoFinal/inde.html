@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <select id="opcoes" onchange="mostrarConteudo()">
+        <option value="">Selecione uma opção</option>
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+      </select>
+      
+      <div id="conteudoOpcao1" style="display: none;">
+        Conteúdo da Opção 1
+      </div>
+      
+      <div id="conteudoOpcao2" style="display: none;">
+        Conteúdo da Opção 2
+      </div>
+      
+      <div id="conteudoOpcao3" style="display: none;">
+        Conteúdo da Opção 3
+      </div>
+      
+      <script>
+        function mostrarConteudo() {
+          var select = document.getElementById("opcoes");
+          var opcaoSelecionada = select.value;
+            console.log(opcaoSelecionada)
+          const con1 = document.getElementById("conteudoOpcao1");
+
+          if(opcaoSelecionada == "opcao1"){
+            con1.style.display = "block";
+          }else {
+            con1.style.display = "none";
+          }
+        }
+      </script>
+</body>
+</html>
