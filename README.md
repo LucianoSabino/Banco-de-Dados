@@ -1,35 +1,39 @@
-# Banco de Dados
- Deixar resistrado atividades da materia de Banco de Dados da facudade UFRB
+# Repositório da Disciplina de Banco de Dados
+
+Este repositório tem como objetivo documentar o aprendizado obtido na disciplina de Banco de Dados da Universidade Federal do Recôncavo Baiano. Ao longo do curso, foram explorados os conceitos fundamentais de Sistemas de Gerenciamento de Banco de Dados (SGBDs) e desenvolvidas habilidades para modelar e implementar bancos de dados, aplicando os conhecimentos adquiridos em um projeto prático.
+
 ## Lista 3
- ### 1- Crie o modelo ER para o seguinte problema.
-Análise de Requisitos. As informações que se deseja estocar são: 
-∙ passageiros (nome, endereço, telefone) 
-∙ vôos (número do vôo, hora de partida, hora de chegada, origem, destino) 
-∙ dias em que operam os vôos (dias do ano) e quais aeronaves são designadas para o vôonestesdias. Que empregados estão designados para atender cada vôo, para cada dia emque operaovôo(aeromoças, comissários de bordo, etc.). 
-∙ os pilotos alocados para os vôos, para cada dia em que operam os vôos (o mesmo númerodevôopode ter diferentes pilotos dependendo do dia). 
-∙ informações sobre pilotos tais como número de brevet, horas voadas. 
-∙ empregados da companhia em geral (informações tais como nome, cpf, endereço, salário, idade). ∙ informações sobre aviões (modelo, fabricante, número de lugares, comprimento). Atenção: umaviãofica caracterizado pelo modelo e fabricante; uma aeronave, por sua vez é caracterizada peloseunúmero de série. Uma aeronave é uma máquina particular. Um avião pode ser encaradocomoaclasse de todas as aeronaves de um dado modelo e dado fabricante. 
-∙ para cada piloto deseja-se guardar informações sobre que tipo de aviões ele está habilitadoapilotar.∙ informações sobre peças de aviões em geral (tais como código e preço). 
-∙ informações sobre que peças são utilizadas em que aviões e em que quantidade. ∙ informações sobre técnicos da companhia aérea e que aviões estão habilitados a manipular. 
+
+### 1- Crie o modelo ER para o seguinte problema.
+
+Análise de Requisitos. As informações que se deseja estocar são:
+∙ passageiros (nome, endereço, telefone)
+∙ vôos (número do vôo, hora de partida, hora de chegada, origem, destino)
+∙ dias em que operam os vôos (dias do ano) e quais aeronaves são designadas para o vôonestesdias. Que empregados estão designados para atender cada vôo, para cada dia emque operaovôo(aeromoças, comissários de bordo, etc.).
+∙ os pilotos alocados para os vôos, para cada dia em que operam os vôos (o mesmo númerodevôopode ter diferentes pilotos dependendo do dia).
+∙ informações sobre pilotos tais como número de brevet, horas voadas.
+∙ empregados da companhia em geral (informações tais como nome, cpf, endereço, salário, idade). ∙ informações sobre aviões (modelo, fabricante, número de lugares, comprimento). Atenção: umaviãofica caracterizado pelo modelo e fabricante; uma aeronave, por sua vez é caracterizada peloseunúmero de série. Uma aeronave é uma máquina particular. Um avião pode ser encaradocomoaclasse de todas as aeronaves de um dado modelo e dado fabricante.
+∙ para cada piloto deseja-se guardar informações sobre que tipo de aviões ele está habilitadoapilotar.∙ informações sobre peças de aviões em geral (tais como código e preço).
+∙ informações sobre que peças são utilizadas em que aviões e em que quantidade. ∙ informações sobre técnicos da companhia aérea e que aviões estão habilitados a manipular.
 
 <h4 align="center" color="red"> Solução </h4>
 <img src="https://github.com/LucianoSabino/Banco-de-Dados/blob/main/Lista_3/Fotos/Q1.drawio.png?raw=true">
 
-
 ### 3- A Notown Records decidiu armazenar informações sobre músicos que tocam emseus álbuns (assimcomo outros dados da empresa) em um banco de dados. A empresa escolheu sabiamente contratar você como projetista de banco de dados.
-a) Cada músico que grava na Notown tem um CPF, um nome, um endereço, e umnúmerodetelefone. Músicos (que não ganham muito normalmente) compartilhamo mesmoendereço, enenhum endereço tem mais do que um telefone. 
 
-b) Cada instrumento utilizado nas músicas gravadas na Notown tem umnome (por exemplo,guitarra, sintetizador, flauta) e um tom musical (por exemplo C, B#, E#). 
+a) Cada músico que grava na Notown tem um CPF, um nome, um endereço, e umnúmerodetelefone. Músicos (que não ganham muito normalmente) compartilhamo mesmoendereço, enenhum endereço tem mais do que um telefone.
 
-c) Cada álbum gravado com o selo Notown tem um título, uma data de direitos autorais, umformato(por exemplo, CD ou MC) e um identificador de álbum. 
+b) Cada instrumento utilizado nas músicas gravadas na Notown tem umnome (por exemplo,guitarra, sintetizador, flauta) e um tom musical (por exemplo C, B#, E#).
 
-d) Cada música gravada na Notown tem um título e um autor. 
+c) Cada álbum gravado com o selo Notown tem um título, uma data de direitos autorais, umformato(por exemplo, CD ou MC) e um identificador de álbum.
+
+d) Cada música gravada na Notown tem um título e um autor.
 
 e) Cada músico toca diversos instrumentos e um determinado instrumento pode ser tocadoporvários músicos.
 
-f) Cada música é interpretada por um ou mais músicos, e um músico pode interpretar maisdeumamúsica. 
+f) Cada música é interpretada por um ou mais músicos, e um músico pode interpretar maisdeumamúsica.
 
-g) Cada álbum tem exatamente um músico que trabalha como seu produtor. Naturalmente, ummúsico pode produzir diversos álbuns. 
+g) Cada álbum tem exatamente um músico que trabalha como seu produtor. Naturalmente, ummúsico pode produzir diversos álbuns.
 
 Projete um esquema conceitual para a Notown e desenhe um diagrama ER para seu esquema. As informações precedentes descrevem a situação que o banco de dados da Notown devemodelar.Certifique-se de indicar todas as restrições de chave e de participação e quaisquer suposiçõesquevocêtiver de assumir por falta de informações fornecidas pelo cliente. Identifique eventualmente restriçõesquevocê não está apto a capturar no diagrama ER e explique sucintamente por que vocênãopoderiaexpressá-las no diagrama com os recursos vistos em aula.
 
@@ -37,26 +41,27 @@ Projete um esquema conceitual para a Notown e desenhe um diagrama ER para seu es
 <img src="https://github.com/LucianoSabino/Banco-de-Dados/blob/main/Lista_3/Fotos/Q3.drawio.png?raw=true">
 
 ### 4- A cadeia de farmácias Prescrições-RX ofereceu a você um suprimento gratuito vitalício de medicamentos se você projetar seu banco de dados. Dados os custos crescentes relacionados aos cuidados com a saúde, você concordou. Eis as informações que você reuniu após a entrevista comseu cliente:
+
 a) Os pacientes são identificados pelo CPF, e seus nomes, endereços e idades devem ser
-registrados. 
+registrados.
 
 b) Os médicos são identificados pelo CPF. Para cada médico, o nome, especialidade e anos de
-experiência devem ser registrados. 
+experiência devem ser registrados.
 
-c) Cada empresa farmacêutica é identificada pelo nome e tem um número de telefone. 
+c) Cada empresa farmacêutica é identificada pelo nome e tem um número de telefone.
 
 d) Para cada remédio, o nome e a fórmula devem ser registrados. Cada medicamento é vendido
 por determinada empresa farmacêutica, e o seu nome o identifica univocamente entre os
 produtos dessa empresa. Se uma empresa farmacêutica é excluída, você não precisa mais
-manter o controle de seus produtos. 
+manter o controle de seus produtos.
 
 e) Cada farmácia tem um nome, endereço e um número de telefone.
 
-f) Todo paciente tem um médico principal. Todo médico tem no mínimo um paciente. 
+f) Todo paciente tem um médico principal. Todo médico tem no mínimo um paciente.
 
 g) Cada farmácia da rede vende diversos medicamentos e tem um preço para cada um. Um
 medicamento poderia ser vendido em diversas farmácias e o preço pode variar de uma farmácia
-para outra. 
+para outra.
 
 h) Os médicos prescrevem medicamentos para os pacientes. Um médico pode prescrever um ou
 mais medicamentos a diversos pacientes e um paciente pode obter prescrições de diversos
@@ -71,7 +76,7 @@ diversas empresas farmacêuticas. Para cada contrato, você deve armazenar uma d
 j) As farmácias indicam um supervisor para cada contrato. Sempre deve haver um supervisor para cada contrato. Pede-se o seguinte:
 
 a. Desenhe um diagrama ER que captura as informações precedentes. Identifique quaisquer
-restrições não capturadas pelo diagrama ER. 
+restrições não capturadas pelo diagrama ER.
 
 b. Como seu projeto seria alterado se cada medicamento tivesse que ser vendido a um preço fixo
 por todas as farmácias?
@@ -93,13 +98,14 @@ b) Se cada medicamento tivesse que ser vendido a um preço fixo por todas as far
 c) Se todos os registros de prescrições precisassem ser armazenados, seria necessário adicionar uma nova tabela para armazenar as prescrições individuais. Essa tabela teria sua própria chave primária e incluiria as chaves estrangeiras para o paciente, médico e medicamento correspondentes. Além disso, a tabela Prescrição teria um novo atributo para identificar cada prescrição individualmente, além da data e quantidade.
 
 ### 5- Projetar um BD para uma instituição financeira (I) cujas características são:
-a) I é organizada em agências. Cada agência está localizada numa cidade e tem um nome. Seus
-ativos são monitorados por I. 
 
-b) Clientes são identificados por um número. I armazena para cada cliente: nome, rua, cidade. Clientes podem ter contas e fazer empréstimos. Um cliente pode ter um gerente pessoal. 
+a) I é organizada em agências. Cada agência está localizada numa cidade e tem um nome. Seus
+ativos são monitorados por I.
+
+b) Clientes são identificados por um número. I armazena para cada cliente: nome, rua, cidade. Clientes podem ter contas e fazer empréstimos. Um cliente pode ter um gerente pessoal.
 
 c) Para cada funcionário de I são armazenados: número, nome, telefone, dependentes, número de
-seu gerente, data de admissão. 
+seu gerente, data de admissão.
 d) Cada cliente de I pode possuir mais de uma conta, e cada conta pode possuir mais de um cliente. Cada conta recebe um número. I mantém controle sobre o saldo de cada conta e sobre a data
 de seu último acesso.
 
@@ -109,7 +115,8 @@ um cliente. I controla os pagamentos efetuados para cada empréstimo. 6- Elabora
 <h4 align="center" color="red"> Solução </h4>
 <img src="https://github.com/LucianoSabino/Banco-de-Dados/blob/main/Lista_3/Fotos/Q5.drawio.png?raw=true">
 
-### 6- Elaborar o esquema conceitual para o BD de uma companhia. 
+### 6- Elaborar o esquema conceitual para o BD de uma companhia.
+
 A companhia é organizada em departamentos. Cada departamento tem um nome e um número. Além
 disto, um departamento controla vários projetos, cada um dos quais com um nome, um número de identificação e
 o período de tempo no qual deve ser desenvolvido. Na referida companhia, cada projeto somente pode ser
@@ -127,7 +134,8 @@ funcionário.
 <h4 align="center" color="red"> Solução </h4>
 <img src="https://github.com/LucianoSabino/Banco-de-Dados/blob/main/Lista_3/Fotos/Q6.drawio.png?raw=true">
 
-### 7- Faça o esquema conceitual para o banco de dados descrito a seguir. Defina restrições de participação total e parcial de forma apropriada. 
+### 7- Faça o esquema conceitual para o banco de dados descrito a seguir. Defina restrições de participação total e parcial de forma apropriada.
+
 Deseja-se criar um BD para uma agência de turismo, contendo informações sobre recursos oferecidos
 pelas cidades que fazem parte da programação de turismo da agência. As informações a serem mantidas sobre
 cada cidade referem-se a hotéis, restaurantes e pontos turísticos. Sobre os hotéis que a cidade possui deseja-se guardar o código, o nome, o endereço, a categoria (sem
